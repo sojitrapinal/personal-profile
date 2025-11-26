@@ -1,0 +1,91 @@
+ /* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fafcff; /* very soft light blue/white */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 35px;
+    background: linear-gradient(to right, #ffeef8, #e8f3ff);
+    border-bottom: 5px solid #f8e8ff;
+    box-shadow: 0 0 18px rgba(0,0,0,0.12);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #6a0dad;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #8e2cc9;
+}
+
+/* UNIVERSAL Light Rainbow Border */
+section {
+    margin: 22px;
+    padding: 20px;
+    background: #ffffff;
+    border: 5px solid;
+    border-image: linear-gradient(
+        45deg,
+        #ffebef, /* soft baby pink */
+        #ffeef8, /* pastel pink */
+        #fff6e8, /* light peach */
+        #ecffe8, /* mint */
+        #e6fff9, /* aqua */
+        #eef1ff  /* lavender-blue */
+    ) 1;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(150, 150, 150, 0.15);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #6a0dad;
+}
+
+/* About Section */
+.about {
+    background: #fff8fc; /* lightest pink */
+}
+
+/* Skills Section */
+.skills {
+    background: #f7fbff; /* light baby blue */
+}
+
+.skills li {
+    padding: 6px 0;
+    font-size: 1.1rem;
+}
+
+/* Projects Section */
+.projects {
+    background: #fafff7; /* super soft mint */
+}
+
+/* Contact Section */
+.contact {
+    background: #fff4fa; /* soft pastel light pink */
+}
+
+.contact a {
+    color: #d63384;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px;
+    background: linear-gradient(to right, #ffeef8, #e8f3ff);
+    color: #6a0dad;
+    box-shadow: 0 -6px 18px rgba(0,0,0,0.12);
+}
