@@ -1,0 +1,158 @@
+/* 🌈 Soft Rainbow Gradient Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #ffdde1, #ee9ca7, #a1c4fd, #c2e9fb);
+    background-size: 300% 300%;
+    animation: bgMove 12s ease infinite;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    margin: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Sections */
+section {
+    background: rgba(255, 255, 255, 0.45);
+    margin: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 18px rgba(0,0,0,0.25);
+}
+
+/* Heading Style */
+h1, h2 {
+    color: #333;
+}
+
+/* Smooth list hover */
+ul li {
+    transition: padding-left 0.3s ease, color 0.3s;
+}
+
+ul li:hover {
+    padding-left: 10px;
+    color: #ff4081;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* ✨ Fade-in animation */
+.fade-in {
+    animation: fadeIn 1.5s ease forwards;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ✨ Slide-up animation for content */
+.slide-up {
+    opacity: 0;
+    animation: slideUp 1.5s ease forwards;
+}
+@keyframes slideUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+    header {
+        margin: 10px;
+        padding: 25px;
+    }
+}
+/* Smooth fade + slide animation */
+.animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.9s ease;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Bounce + Soft Slide-Up Animation */
+.animate-bounce {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.6s ease-out;
+}
+
+.animate-bounce.show {
+    animation: bounceUp 1s ease forwards;
+}
+
+@keyframes bounceUp {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-15px);
+    }
+    80% {
+        transform: translateY(8px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply smooth shadow to all sections */
+section {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Optional: also apply to header & footer */
+header, footer {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+.rainbow-hover {
+    transition: 0.4s ease;
+}
+
+.rainbow-hover:hover {
+    box-shadow:
+        0 0 10px rgba(255, 0, 0, 0.6),
+        0 0 20px rgba(255, 165, 0, 0.6),
+        0 0 30px rgba(255, 255, 0, 0.6),
+        0 0 40px rgba(0, 128, 0, 0.6),
+        0 0 50px rgba(0, 0, 255, 0.6),
+        0 0 60px rgba(75, 0, 130, 0.6),
+        0 0 70px rgba(148, 0, 211, 0.6);
+    transform: translateY(-5px);
+}
